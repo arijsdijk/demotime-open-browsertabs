@@ -1,4 +1,16 @@
 title: demo
 description: ''
 version: 2
-demos: []
+demos:
+  - id: demo-mdlp53pu-fqqx
+    title: Intro
+    steps:
+      - action: openSlide
+        path: .demo/slides/intro.md
+    description: Intro slide
+  - id: demo-mdlp5smk-f2dn
+    title: First slide
+    steps:
+      - action: openSlide
+        path: .demo/slides/first-slide.md
+    description: Open first slide
