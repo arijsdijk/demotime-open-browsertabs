@@ -14,3 +14,9 @@ demos:
       - action: openSlide
         path: .demo/slides/first-slide.md
     description: Open first slide
+  - id: demo-mdlq3n9e-gjx2
+    title: Open Edge tab
+    steps:
+      - action: executeTerminalCommand
+        command: osascript .demo/slides/open-browser-tab.scpt 1
+    description: Opening first tab

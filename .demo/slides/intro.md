@@ -3,6 +3,6 @@ theme: unnamed
 layout: intro
 ---
 
-# DEMO TIME
+# Demo Time
 
 ## opening tabs in Edge (or Chrome)

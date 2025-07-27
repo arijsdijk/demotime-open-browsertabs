@@ -3,6 +3,6 @@ theme: unnamed
 layout: intro
 ---
 
-# DEMO TIME
+# Back to slides
 
-## opening tabs in Edge (or Chrome)
+## Back to this (next) slide using the Demo Time API
