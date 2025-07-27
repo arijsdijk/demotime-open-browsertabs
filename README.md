@@ -29,7 +29,7 @@ Since I work on macOS (sorry, Windows users), I started exploring ways to open a
 
 ## The result
 
-![Running demo](./RunningDemo.gif)
+![Running demo](./assets/RunningDemo.gif)
 
 In the example above, I first open two slides, then I want to switch to my active Power Apps Studio, return to the next step in my demo (a slide), and finally open another active tab (the Demo Time website).
 
@@ -45,7 +45,7 @@ Next, I created a folder named **slides** and added three slides to it:
 * first-slide.md
 * second-slide.md
 
-![Step 1 - MD Slides](./1-added-slides.gif)
+![Step 1 - MD Slides](./assets/1-added-slides.gif)
 
 You can find more information about creating slides, themes, animations, and more [here](https://demotime.show/slides/).
 
@@ -64,7 +64,7 @@ Click on **+ Add Step**
 
 Choose the action **openSlide** and select the slide you want to add (Path)
 
-![Step 2 - Adding Slides](./2-add-steps-slides.gif)
+![Step 2 - Adding Slides](./assets/2-add-steps-slides.gif)
 
 ### Adding AppleScript
 
@@ -88,7 +88,7 @@ end run
 
 Later, we’ll be able to call this script and pass in a variable (an integer) representing the number of the tab we want to open.
 
-![Step 3 - Adding AppleScript](./3-create-applescript.gif)
+![Step 3 - Adding AppleScript](./assets/3-create-applescript.gif)
 
 Now go back to your demo file—in this case, **demo.yaml**.
 
@@ -106,7 +106,7 @@ Add the following code under Command:
 osascript .demo/slides/open-browser-tab.scpt 1
 ```
 
-![Step 4 - Execute Applescript](./4-execute-applescript.gif)
+![Step 4 - Execute Applescript](./assets/4-execute-applescript.gif)
 
 
 ### The Result So Far
@@ -115,7 +115,7 @@ In my Edge browser, I’ve now opened two tabs: the first one points to a Power 
 
 Now, let’s switch to Demo Time in presentation mode and walk through the steps of your demo.
 
-![Step 5 - Run the demo](./5-run-demo.gif)
+![Step 5 - Run the demo](./assets/5-run-demo.gif)
 
 
 Now we’re going to add two more demos to the demo file.
@@ -130,7 +130,7 @@ osascript .demo/slides/open-browser-tab.scpt 3
 
 As you can see, we’re now passing the value 3 as a variable, which will open the third active tab in your Edge browser.
 
-![Step 6 - Add slide and execute command](./6-add-slide-and-execute.gif)
+![Step 6 - Add slide and execute command](./assets/6-add-slide-and-execute.gif)
 
 We’ve now created all the necessary steps in the demo file, which means we can also open specific browser tabs directly.
 
@@ -147,7 +147,7 @@ http://localhost:3710/api/next?bringToFront=true
 
 I add the URL to the Launch function in the OnSelect property of a button in my Power Apps Canvas app.
 
-![Step 7 Onselect launch API](./7-onselect-launch-powerapp.png)
+![Step 7 Onselect launch API](./assets/7-onselect-launch-powerapp.png)
 
 You can find more information about the Demo Time API [here](https://demotime.show/references/api/).
 
@@ -170,7 +170,7 @@ workbench.action.terminal.killAll
 
 Like in the example below
 
-![Step 8 - Clossing temrinal window](./8-terminal-window.png)
+![Step 8 - Clossing temrinal window](./assets/8-terminal-window.png)
 
 
 ### Browser tabs
@@ -179,7 +179,7 @@ In this demo, the Demo Time API is used via a hyperlink from Power Apps. Because
 
 It’s important to aware of this when determining which tab to open next. In the example above, I had two tabs open beforehand, but this is what happens when opening the first tab.
 
-![Step 9 - Extra tabs](./9-extra-tabs.png)
+![Step 9 - Extra tabs](./assets/9-extra-tabs.png)
 
 
 
