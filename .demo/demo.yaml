@@ -19,6 +19,8 @@ demos:
     steps:
       - action: executeTerminalCommand
         command: osascript .demo/slides/open-browser-tab.scpt 1
+      - action: executeVSCodeCommand
+        command: workbench.action.terminal.killAll
     description: Opening first tab
   - id: demo-mdlr5avk-km3a
     title: Second slide
@@ -31,4 +33,6 @@ demos:
     steps:
       - action: executeTerminalCommand
         command: osascript .demo/slides/open-browser-tab.scpt 3
+      - action: executeVSCodeCommand
+        command: workbench.action.terminal.killAll
     description: Opening second tab
