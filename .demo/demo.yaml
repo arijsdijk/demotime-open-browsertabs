@@ -20,3 +20,15 @@ demos:
       - action: executeTerminalCommand
         command: osascript .demo/slides/open-browser-tab.scpt 1
     description: Opening first tab
+  - id: demo-mdlr5avk-km3a
+    title: Second slide
+    steps:
+      - action: openSlide
+        path: .demo/slides/second-slide.md
+    description: Open second slide
+  - id: demo-mdlr7yto-gaj7
+    title: Open Edge tab (3)
+    steps:
+      - action: executeTerminalCommand
+        command: osascript .demo/slides/open-browser-tab.scpt 3
+    description: Opening second tab
