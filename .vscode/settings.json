@@ -1,6 +1,6 @@
 {
     "demoTime.defaultFileType": "yaml",
-    "workbench.editor.showTabs": "none",
+    "workbench.editor.showTabs": "multiple",
     "workbench.activityBar.location": "default",
     "demoTime.previousEnabled": true,
     "workbench.statusBar.visible": true,
